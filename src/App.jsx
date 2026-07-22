@@ -38,6 +38,7 @@ function App() {
             <use href="/icons.svg#documentation-icon"></use>
           </svg>
           <h2>Documentation</h2>
+          <p>Learn more about Vite</p>
           <p>Your questions, answered</p>
           <ul>
             <li>
