@@ -5,7 +5,7 @@
    ============================================================ */
 
 export const profile = {
-  name: 'Chue Yang', // TODO: ใส่ชื่อจริง
+  name: 'Choua Vang',
   role: 'Full-Stack Developer',
   location: 'Thailand',
   // ประโยคแนะนำตัวสั้น ๆ ใน Hero — ตรงไปตรงมา ไม่ต้องหรูหรา
