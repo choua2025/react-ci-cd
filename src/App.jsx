@@ -40,9 +40,7 @@ function App() {
           <h2>Documentation</h2>
           <p>Learn more about Vite</p>
           <p>Learn more about Vite</p>
-          <p>Learn more about Vite</p>
-          <p>Learn more about Vite</p>
-          <p>Learn more about Vite</p>
+
           <p>Your questions, answered</p>
           <ul>
             <li>
