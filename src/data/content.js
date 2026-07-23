@@ -16,7 +16,7 @@ export const profile = {
     'I focus on shipping software that actually reaches users. Most of my work sits between the database and the interface, which means I care as much about query plans as I do about spacing and contrast.',
     'Recently I have been working on CI/CD pipelines with GitHub Actions and Vercel, so that every merge to main goes live without anyone touching a terminal.',
   ],
-  email: 'chueyang241199@gmail.com', // TODO: ตรวจสอบอีเมลที่ใช้รับงาน
+  email: 'vchoua05@gmail.com', // TODO: ตรวจสอบอีเมลที่ใช้รับงาน
   github: 'https://github.com/choua2025', // TODO
   linkedin: 'https://linkedin.com/in/your-handle', // TODO
   // วางไฟล์ resume.pdf ไว้ในโฟลเดอร์ public/ แล้วลิงก์นี้จะใช้งานได้ทันที
