@@ -4,8 +4,7 @@
   "compatibility_date": "2026-08-01",
   "assets": {
     "directory": "./dist",
-    // SPA fallback: serve index.html for any path with no matching asset,
-    // matching the catch-all rewrite in vercel.json.
+    // SPA fallback: serve index.html for any path with no matching asset.
     "not_found_handling": "single-page-application"
   }
 }

@@ -23,9 +23,10 @@ dist-ssr
 *.sln
 *.sw?
 
-# Vercel
-.vercel
 .env*
+
+# Leftover local Vercel CLI state (safe to delete)
+.vercel
 
 # Cloudflare
 .wrangler
