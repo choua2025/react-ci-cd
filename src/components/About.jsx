@@ -15,7 +15,7 @@ export default function About() {
 
           <dl className="border-line space-y-6 border-t pt-6 font-mono text-sm md:col-span-4 md:border-t-0 md:border-l md:pt-0 md:pl-8">
             <div>
-              <dt className="text-secondary text-xs tracking-widest">ROLE</dt>
+              <dt className="text-secondary text-xs tracking-widest">ROLE test</dt>
               <dd className="mt-1">{profile.role}</dd>
             </div>
             <div>
