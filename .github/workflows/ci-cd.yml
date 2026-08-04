@@ -2,7 +2,7 @@ name: CI/CD
 
 on:
   push:
-    branches: [main]
+    branches: [main, development]
   pull_request:
     branches: [main]
 
@@ -29,7 +29,9 @@ jobs:
 
   cloudflare-preview:
     name: Cloudflare Preview
-    if: github.event_name == 'pull_request'
+    # Pushes to development, and PRs opened against main, both get a
+    # throwaway preview URL. Production traffic is untouched.
+    if: github.event_name == 'pull_request' || github.ref == 'refs/heads/development'
     needs: ci
     runs-on: ubuntu-latest
     steps:
