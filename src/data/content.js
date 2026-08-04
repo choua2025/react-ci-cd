@@ -91,7 +91,7 @@ export const experience = [
   {
     role: 'Web Developer', // TODO
     company: 'Company Name',
-    period: '2023 — 2024',
+    period: '2025 — 2026',
     points: [
       'Developed and maintained internal tools used daily by the operations team.',
       'Migrated legacy pages to a component-based frontend, cutting page load time roughly in half.',
