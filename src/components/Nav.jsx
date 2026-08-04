@@ -3,8 +3,8 @@ import Button from './Button'
 import { profile } from '../data/content'
 
 const links = [
-  { href: '#about', label: 'Abouts' },
-  { href: '#stack', label: 'Stacks' },
+  { href: '#about', label: 'About' },
+  { href: '#stack', label: 'Stack' },
   { href: '#projects', label: 'Projects' },
   { href: '#experience', label: 'Experience' },
   { href: '#contact', label: 'Contact' },
