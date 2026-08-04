@@ -1,0 +1,43 @@
+name: Cloudflare Preview
+
+on:
+  push:
+    branches: [development, test]
+  pull_request:
+    branches: [main]
+
+jobs:
+  ci:
+    uses: ./.github/workflows/ci.yml
+
+  preview:
+    name: Cloudflare Preview
+    needs: ci
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build
+        run: npm run build
+
+      # Uploads a new Worker version without shifting production traffic;
+      # Cloudflare returns a per-version preview URL.
+      - name: Upload preview version
+        id: preview
+        uses: cloudflare/wrangler-action@v4
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: versions upload
+
+      - name: Summarize preview URL
+        run: |
+          echo "Cloudflare preview: ${{ steps.preview.outputs.deployment-url }}" >> $GITHUB_STEP_SUMMARY
