@@ -7,7 +7,7 @@
 export const profile = {
   name: 'Choua Vang',
   role: 'Full-Stack Developer',
-  location: 'Thailand',
+  location: 'Laos, Vientiane',
   // ประโยคแนะนำตัวสั้น ๆ ใน Hero — ตรงไปตรงมา ไม่ต้องหรูหรา
   tagline:
     'I build web applications end to end — from PostgreSQL schemas and Express APIs to production UIs in React and Vue.',
