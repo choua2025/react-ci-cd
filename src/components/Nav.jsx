@@ -3,11 +3,11 @@ import Button from './Button'
 import { profile } from '../data/content'
 
 const links = [
-  { href: '#about', label: 'About' },
-  { href: '#stack', label: 'Stack' },
-  { href: '#projects', label: 'Projects' },
-  { href: '#experience', label: 'Experience' },
-  { href: '#contact', label: 'Contact' },
+  { href: '#about', label: 'About me' },
+  { href: '#stack', label: 'Stack and tools' },
+  { href: '#projects', label: 'Projects and work' },
+  { href: '#experience', label: 'Experience and education' },
+  { href: '#contact', label: 'Contact me' },
 ]
 
 export default function Nav() {
